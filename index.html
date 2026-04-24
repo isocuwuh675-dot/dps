@@ -13,6 +13,25 @@
 
   gtag('config', 'AW-18115401170');
 </script>
+    <!-- Event snippet for Просмотр страницы conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18115401170/Vw3pCIqy3aEcENKrjL5D',
+      'value': 1.0,
+      'currency': 'USD',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
     <style>
         /* БАЗОВЫЕ НАСТРОЙКИ */
         :root {
@@ -299,11 +318,12 @@
     </nav>
 
     <section class="hero">
-        <img src="logo.png" alt="Логотип ДПС Контроль" class="logo-main">
-        <h1 data-i18n="title">ДПС <span>Контроль</span></h1>
-        <p data-i18n="hero_desc">Технология, которая видит дальше. Умный антирадар и навигатор, созданный водителями для водителей.</p>
-        <a href="https://github.com/isocuwuh675-dot/apk/releases/download/apk/DPS_RADAR.apk" class="btn-main" data-i18n="btn_download">Скачать приложение</a>
-    </section>
+    <img src="logo.png" alt="Логотип ДПС Контроль" class="logo-main">
+    <h1 data-i18n="title">ДПС <span>Контроль</span></h1>
+    <p data-i18n="hero_desc">Технология, которая видит дальше. Умный антирадар и навигатор, созданный водителями для водителей.</p>
+    
+    <a href="https://github.com/isocuwuh675-dot/apk/releases/download/apk/DPS_RADAR.apk" class="btn-main" data-i18n="btn_download" onclick="return gtag_report_conversion(this.href);">Скачать приложение</a>
+</section>
 
     <section class="content-section">
         
@@ -418,7 +438,7 @@
 </section>
 
 <section class="download-section">
-    <a href="https://github.com/isocuwuh675-dot/apk/releases/download/apk/DPS_RADAR.apk" class="btn-main" data-i18n="btn_download">Скачать приложение</a>
+    <a href="https://github.com/isocuwuh675-dot/apk/releases/download/apk/DPS_RADAR.apk" class="btn-main" data-i18n="btn_download" onclick="return gtag_report_conversion(this.href);">Скачать приложение</a>
 </section>
     
 
