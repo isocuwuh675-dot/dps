@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ДПС Контроль — Умный Антирадар</title>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18115401170"></script>
+    <title>ДПС Контроль — Умный GPS-информер</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18115401170"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -13,9 +12,7 @@
 
   gtag('config', 'AW-18115401170');
 </script>
-    <!-- Event snippet for Просмотр страницы conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
+    <script>
 function gtag_report_conversion(url) {
   var callback = function () {
     if (typeof(url) != 'undefined') {
@@ -221,26 +218,18 @@ function gtag_report_conversion(url) {
         .stars { color: var(--accent); font-size: 1.1rem; margin-bottom: 10px; display: block; }
 
         /* FAQ */
-        /* Находим твой существующий класс FAQ и добавляем/меняем отступы */
-.faq-section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding-top: 80px;      /* Отступ сверху */
-    padding-bottom: 20px;   /* ДЕЛАЕМ МЕНЬШЕ ОТСТУП СНИЗУ (было 80px) */
-}
-
-/* Добавляем стили для новой секции с кнопкой */
-.download-section {
-    text-align: center;
-    padding-top: 20px;      /* Небольшой отступ от FAQ */
-    padding-bottom: 80px;   /* Отступ снизу до подвала (футера) */
-}
         .faq-section {
             max-width: 800px;
             margin: 0 auto;
-            padding: 80px 20px;
+            padding-top: 80px;      
+            padding-bottom: 20px;   
         }
 
+        .download-section {
+            text-align: center;
+            padding-top: 20px;      
+            padding-bottom: 80px;   
+        }
         .faq-section h2 {
             text-align: center;
             margin-bottom: 40px;
@@ -320,7 +309,7 @@ function gtag_report_conversion(url) {
     <section class="hero">
     <img src="logo.png" alt="Логотип ДПС Контроль" class="logo-main">
     <h1 data-i18n="title">ДПС <span>Контроль</span></h1>
-    <p data-i18n="hero_desc">Технология, которая видит дальше. Умный антирадар и навигатор, созданный водителями для водителей.</p>
+    <p data-i18n="hero_desc">Технология, которая видит дальше. Умный GPS-информер и навигатор, созданный водителями для водителей.</p>
     
     <a href="https://github.com/isocuwuh675-dot/apk/releases/download/apk/DPS_RADAR.apk" class="btn-main" data-i18n="btn_download" onclick="return gtag_report_conversion(this.href);">Скачать приложение</a>
 </section>
@@ -336,9 +325,9 @@ function gtag_report_conversion(url) {
                     <line x1="8" y1="16" x2="8.01" y2="16"></line>
                     <line x1="16" y1="16" x2="16.01" y2="16"></line>
                 </svg>
-                <span data-i18n="card6_title">Нейро-перехват камер</span>
+                <span data-i18n="card6_title">Интеллектуальный мониторинг</span>
             </h3>
-            <p data-i18n="card6_desc">Наш ИИ в реальном времени сканирует открытые городские камеры. Нейросеть распознает патрульные машины по раскраске и маячкам, предупреждая о засаде раньше всех.</p>
+            <p data-i18n="card6_desc">Наш ИИ анализирует дорожную обстановку в реальном времени. Нейросеть распознает зоны контроля трафика, помогая водителям заранее узнать о проверках на дорогах.</p>
         </div>
 
         <div class="glass-card">
@@ -348,9 +337,9 @@ function gtag_report_conversion(url) {
                     <circle cx="12" cy="12" r="6"></circle>
                     <circle cx="12" cy="12" r="2"></circle>
                 </svg>
-                <span data-i18n="card1_title">Радар нового поколения</span>
+                <span data-i18n="card1_title">Информер нового поколения</span>
             </h3>
-            <p data-i18n="card1_desc">Наши алгоритмы анализируют маршрут и предупреждают о камерах на полосу, контроле светофоров и стационарных радарах.</p>
+            <p data-i18n="card1_desc">Наши алгоритмы анализируют маршрут и предупреждают о камерах на полосу, контроле светофоров и стационарных системах фиксации.</p>
         </div>
         
         <div class="glass-card">
@@ -363,7 +352,7 @@ function gtag_report_conversion(url) {
                 </svg>
                 <span data-i18n="card2_title">Сила сообщества</span>
             </h3>
-            <p data-i18n="card2_desc">Видите засаду полиции, ДТП или опасную яму? Нажмите одну кнопку, и за секунду об этом узнают все водители поблизости.</p>
+            <p data-i18n="card2_desc">Карта оживает благодаря тысячам пользователей. Видите пост контроля, ДТП или опасную яму? Нажмите одну кнопку, и все об этом узнают.</p>
         </div>
 
         <div class="glass-card">
@@ -372,9 +361,9 @@ function gtag_report_conversion(url) {
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                     <circle cx="12" cy="10" r="3"></circle>
                 </svg>
-                <span data-i18n="card3_title">Отметки патрулей</span>
+                <span data-i18n="card3_title">Дорожные события</span>
             </h3>
-            <p data-i18n="card3_desc">Пользователи в реальном времени отмечают на карте расположение мобильных постов. Будьте проинформированы об актуальной ситуации.</p>
+            <p data-i18n="card3_desc">Пользователи в реальном времени отмечают на карте расположение постов контроля и участки затрудненного движения. Будьте проинформированы.</p>
         </div>
 
         <div class="glass-card">
@@ -397,7 +386,7 @@ function gtag_report_conversion(url) {
                     <circle cx="12" cy="12" r="3"></circle>
                     <line x1="1" y1="1" x2="23" y2="23"></line>
                 </svg>
-                <span data-i18n="card5_title">Режим невидимки</span>
+                <span data-i18n="card5_title">Фоновый режим работы</span>
             </h3>
             <p data-i18n="card5_desc">Включите ДПС Контроль, запустите любимый навигатор или выключите экран. Голосовые подсказки вовремя предупредят вас об опасности.</p>
         </div>
@@ -412,7 +401,7 @@ function gtag_report_conversion(url) {
         <div class="glass-card review-card">
             <span class="stars">★★★★★</span>
             <span class="review-name" data-i18n="rev2_name">Бахыт</span>
-            <p data-i18n="rev2_text">"Очень помогает в Бишкеке. Теперь всегда в курсе, где стоят патрули. Респект разработчикам!"</p>
+            <p data-i18n="rev2_text">"Очень помогает в Бишкеке. Теперь всегда в курсе, где стоят посты контроля. Респект разработчикам!"</p>
         </div>
         <div class="glass-card review-card">
             <span class="stars">★★★★★</span>
@@ -425,15 +414,15 @@ function gtag_report_conversion(url) {
     <h2 data-i18n="faq_title">Частые вопросы</h2>
     <div class="faq-item">
         <div class="faq-question"><span data-i18n="q1">Приложение бесплатное?</span> <span>+</span></div>
-        <div class="faq-answer" data-i18n="a1">Да, базовый функционал антирадара и карты полностью бесплатен для всех.</div>
+        <div class="faq-answer" data-i18n="a1">Да, базовый функционал GPS-информера и карты полностью бесплатен для всех.</div>
     </div>
     <div class="faq-item">
         <div class="faq-question"><span data-i18n="q2">Это законно?</span> <span>+</span></div>
-        <div class="faq-answer" data-i18n="a2">Да, приложение использует открытые данные о камерах и GPS-координаты пользователей.</div>
+        <div class="faq-answer" data-i18n="a2">Да, приложение использует открытые данные о дорожной инфраструктуре и GPS-координаты пользователей.</div>
     </div>
     <div class="faq-item">
-        <div class="faq-question"><span data-i18n="q3">Как работает нейросеть?</span> <span>+</span></div>
-        <div class="faq-answer" data-i18n="a3">Наш ИИ анализирует публичные трансляции городских камер, программно вычисляя спецтранспорт в потоке, и наносит эти данные на карту.</div>
+        <div class="faq-question"><span data-i18n="q3">Как работает система?</span> <span>+</span></div>
+        <div class="faq-answer" data-i18n="a3">Наш ИИ анализирует открытые данные о дорожной обстановке, программно вычисляя зоны контроля, и наносит эти данные на карту.</div>
     </div>
 </section>
 
@@ -443,7 +432,7 @@ function gtag_report_conversion(url) {
     
 
     <footer>
-        <p data-i18n="footer_text">&copy; 2026 ДПС Контроль. Ни гвоздя, ни жезла!</p>
+        <p data-i18n="footer_text">&copy; 2026 ДПС Контроль. Безопасных дорог!</p>
     </footer>
 
     <script>
@@ -534,67 +523,67 @@ function gtag_report_conversion(url) {
         /* --- ЛОГИКА ПЕРЕВОДОВ --- */
         const translations = {
             ru: {
-                title: "ДПС <span>Контроль</span>", hero_desc: "Технология, которая видит дальше. Умный антирадар и навигатор, созданный водителями для водителей.", btn_download: "Скачать приложение",
-                card6_title: "Нейро-перехват камер", card6_desc: "Наш ИИ в реальном времени сканирует открытые городские камеры. Нейросеть распознает патрульные машины по раскраске и маячкам, предупреждая о засаде раньше всех.",
-                card1_title: "Радар нового поколения", card1_desc: "Наши алгоритмы анализируют маршрут и предупреждают о камерах на полосу, контроле светофоров и стационарных радарах.",
-                card2_title: "Сила сообщества", card2_desc: "Карта оживает благодаря тысячам пользователей. Видите засаду полиции, ДТП или яму? Нажмите одну кнопку, и все об этом узнают.",
-                card3_title: "Отметки патрулей", card3_desc: "Пользователи в реальном времени отмечают на карте расположение мобильных постов. Будьте всегда проинформированы.",
+                title: "ДПС <span>Контроль</span>", hero_desc: "Технология, которая видит дальше. Умный GPS-информер и навигатор, созданный водителями для водителей.", btn_download: "Скачать приложение",
+                card6_title: "Интеллектуальный мониторинг", card6_desc: "Наш ИИ анализирует дорожную обстановку в реальном времени. Нейросеть распознает зоны контроля трафика, помогая водителям заранее узнать о проверках на дорогах.",
+                card1_title: "Информер нового поколения", card1_desc: "Наши алгоритмы анализируют маршрут и предупреждают о камерах на полосу, контроле светофоров и стационарных системах фиксации.",
+                card2_title: "Сила сообщества", card2_desc: "Карта оживает благодаря тысячам пользователей. Видите пост контроля, ДТП или яму? Нажмите одну кнопку, и все об этом узнают.",
+                card3_title: "Дорожные события", card3_desc: "Пользователи в реальном времени отмечают на карте расположение постов контроля и участки затрудненного движения. Будьте всегда проинформированы.",
                 card4_title: "Работа без интернета", card4_desc: "Загрузите базу камер и опасностей заранее. Приложение работает исключительно по спутникам GPS, экономя ваш трафик.",
-                card5_title: "Режим невидимки", card5_desc: "Включите ДПС Контроль, запустите любимый навигатор или выключите экран. Голосовые подсказки вовремя предупредят вас.",
+                card5_title: "Фоновый режим работы", card5_desc: "Включите ДПС Контроль, запустите любимый навигатор или выключите экран. Голосовые подсказки вовремя предупредят вас.",
                 rev1_name: "Азамат", rev1_text: "Лучшее приложение для дорог. В Казахстане работает идеально, все камеры видит заранее.",
-                rev2_name: "Бахыт", rev2_text: "Очень помогает в Бишкеке. Теперь всегда в курсе, где стоят патрули. Респект!",
+                rev2_name: "Бахыт", rev2_text: "Очень помогает в Бишкеке. Теперь всегда в курсе, где стоят посты контроля. Респект!",
                 rev3_name: "Фаррух", rev3_text: "Удобно, что работает без интернета. Скачал базу Ташкента и ездишь спокойно.",
-                faq_title: "Частые вопросы", q1: "Приложение бесплатное?", a1: "Да, базовый функционал антирадара полностью бесплатен.",
-                q2: "Это законно?", a2: "Да, приложение использует открытые данные о камерах и GPS-координаты.",
-                q3: "Как работает нейросеть?", a3: "Наш ИИ анализирует публичные трансляции городских камер, вычисляя спецтранспорт в потоке, и наносит эти данные на карту.",
-                footer_text: "&copy; 2026 ДПС Контроль. Ни гвоздя, ни жезла!"
+                faq_title: "Частые вопросы", q1: "Приложение бесплатное?", a1: "Да, базовый функционал GPS-информера полностью бесплатен.",
+                q2: "Это законно?", a2: "Да, приложение использует открытые данные о дорожной инфраструктуре и GPS-координаты.",
+                q3: "Как работает система?", a3: "Наш ИИ анализирует открытые данные о дорожной обстановке, помогая выявлять участки контроля, и наносит эти данные на карту.",
+                footer_text: "&copy; 2026 ДПС Контроль. Безопасных дорог!"
             },
             kk: {
-                title: "ДПС <span>Контроль</span>", hero_desc: "Ары қарай көретін технология. Жүргізушілер үшін жүргізушілер жасаған ақылды антирадар мен навигатор.", btn_download: "Қосымшаны жүктеу",
-                card6_title: "Камераларды нейро-бақылау", card6_desc: "Біздің ЖИ нақты уақытта ашық қалалық камераларды сканерлейді. Нейрожелі патрульдік көліктерді түсі мен шамдары арқылы танып, буктурма туралы бәрінен бұрын ескертеді.",
-                card1_title: "Жаңа буын радары", card1_desc: "Біздің алгоритмдер бағытты талдайды және жолақтағы камералар мен радарлар туралы ескертеді.",
-                card2_title: "Қауымдастық күші", card2_desc: "Полиция буктурмасын көрдіңіз бе? Бір батырманы басыңыз, барлық жүргізушілер бұл туралы біледі.",
-                card3_title: "Патрульдер белгісі", card3_desc: "Пайдаланушылар нақты уақыт режимінде картада мобильді бекеттердің орналасуын белгілейді.",
+                title: "ДПС <span>Контроль</span>", hero_desc: "Ары қарай көретін технология. Жүргізушілер үшін жүргізушілер жасаған ақылды GPS-информер мен навигатор.", btn_download: "Қосымшаны жүктеу",
+                card6_title: "Зияткерлік мониторинг", card6_desc: "Біздің ЖИ нақты уақытта жол жағдайын талдайды. Нейрожелі трафикті бақылау аймақтарын танып, тексерулер туралы алдын ала ескертеді.",
+                card1_title: "Жаңа буын информері", card1_desc: "Біздің алгоритмдер бағытты талдайды және камералар мен бақылау жүйелері туралы ескертеді.",
+                card2_title: "Қауымдастық күші", card2_desc: "Жол бақылауын көрдіңіз бе? Бір батырманы басыңыз, барлық жүргізушілер бұл туралы біледі.",
+                card3_title: "Жол оқиғалары", card3_desc: "Пайдаланушылар нақты уақыт режимінде картада бақылау бекеттерінің орналасуын белгілейді.",
                 card4_title: "Интернетсіз жұмыс", card4_desc: "Қауіптер базасын алдын ала жүктеп алыңыз. Қосымша тек GPS спутниктері арқылы жұмыс істейді.",
-                card5_title: "Көрінбейтін режим", card5_desc: "Қосымша фонда жұмыс істей алады. Дауыстық кеңестер сізді қауіп туралы уақытында ескертеді.",
+                card5_title: "Фондық режим", card5_desc: "Қосымша фонда жұмыс істей алады. Дауыстық кеңестер сізді қауіп туралы уақытында ескертеді.",
                 rev1_name: "Алмас", rev1_text: "Жолдар үшін ең жақсы қосымша. Қазақстанда мінсіз жұмыс істейді.",
-                rev2_name: "Берік", rev2_text: "Алматыда өте көп көмектеседі. Патрульдердің қайда тұрғанын әрдайым білемін.",
+                rev2_name: "Берік", rev2_text: "Алматыда өте көп көмектеседі. Бақылау бекеттерінің қайда тұрғанын әрдайым білемін.",
                 rev3_name: "Марат", rev3_text: "Интернетсіз жұмыс істейтіні өте ыңғайлы. Базаны жүктеп алсаң болды.",
-                faq_title: "Жиі қойылатын сұрақтар", q1: "Қосымша тегін бе?", a1: "Иә, антирадар мен картаның негізгі функциялары тегін.",
+                faq_title: "Жиі қойылатын сұрақтар", q1: "Қосымша тегін бе?", a1: "Иә, информер мен картаның негізгі функциялары тегін.",
                 q2: "Бұл заңды ма?", a2: "Иә, біз тек ашық деректер мен GPS координаттарын пайдаланамыз.",
-                q3: "Нейрожелі қалай жұмыс істейді?", a3: "ЖИ ашық қалалық камераларды талдап, полиция көліктерін картаға автоматты түрде түсіреді.",
+                q3: "Жүйе қалай жұмыс істейді?", a3: "ЖИ жол жағдайы туралы ашық деректерді талдап, оларды картаға автоматты түрде түсіреді.",
                 footer_text: "&copy; 2026 ДПС Контроль. Ақ жол!"
             },
             ky: {
-                title: "ДПС <span>Контроль</span>", hero_desc: "Ары көрө алган технология. Айдоочулар үчүн айдоочулар тарабынан түзүлгөн акылдуу антирадар.", btn_download: "Тиркемени жүктөө",
-                card6_title: "Камераларды нейро-көзөмөлдөө", card6_desc: "Биздин КИ реалдуу убакытта ачык шаардык камераларды сканерлейт. Нейротүйүн патрулдук унааларды таанып, буктурма жөнүндө эң биринчи эскертет.",
-                card1_title: "Жаңы муундагы радар", card1_desc: "Биздин алгоритмдер маршрутту талдап, камералар жана радарлар жөнүндө эскертет.",
-                card2_title: "Коомчулуктун күчү", card2_desc: "Полиция буктурмасын көрдүңүзбү? Бир баскычты басыңыз, баары кабардар болушат.",
-                card3_title: "Патрулдардын белгиси", card3_desc: "Колдонуучулар реалдуу убакыт режиминде мобилдик посттордун жайгашкан жерин белгилешет.",
+                title: "ДПС <span>Контроль</span>", hero_desc: "Ары көрө алган технология. Айдоочулар үчүн айдоочулар тарабынан түзүлгөн акылдуу GPS-информер.", btn_download: "Тиркемени жүктөө",
+                card6_title: "Интеллектуалдык мониторинг", card6_desc: "Биздин КИ реалдуу убакытта жол абалын талдайт. Нейротүйүн көзөмөл аймактарын таанып, текшерүүлөр жөнүндө алдын ала эскертет.",
+                card1_title: "Жаңы муундагы информер", card1_desc: "Биздин алгоритмдер маршрутту талдап, камералар жана фиксация системалары жөнүндө эскертет.",
+                card2_title: "Коомчулуктун күчү", card2_desc: "Жол көзөмөлүн көрдүңүзбү? Бир баскычты басыңыз, баары кабардар болушат.",
+                card3_title: "Жол окуялары", card3_desc: "Колдонуучулар реалдуу убакыт режиминде көзөмөл постторунун жайгашкан жерин белгилешет.",
                 card4_title: "Интернетсиз иштөө", card4_desc: "Коркунучтар базасын алдын ала жүктөп алыңыз. Тиркеме GPS аркылуу гана иштейт.",
-                card5_title: "Көрүнбөс режим", card5_desc: "Тиркеме фондук режимде иштей алат. Үн кеңештери коркунуч жөнүндө өз убагында эскертет.",
+                card5_title: "Фондук режим", card5_desc: "Тиркеме фондук режимде иштей алат. Үн кеңештери коркунуч жөнүндө өз убагында эскертет.",
                 rev1_name: "Улан", rev1_text: "Жолдор үчүн эң мыкты тиркеме. Бишкекте эң сонун иштейт.",
-                rev2_name: "Бахыт", rev2_text: "Абдан жардам берет. Эми патрулдардын кайда турганын дайыма билем.",
+                rev2_name: "Бахыт", rev2_text: "Абдан жардам берет. Эми көзөмөл постторунун кайда турганын дайыма билем.",
                 rev3_name: "Айбек", rev3_text: "Интернетсиз иштегени ыңгайлуу. Базаны жүктөп алып бейпил айдайсың.",
-                faq_title: "Суроо-жооптор", q1: "Тиркеме акысызбы?", a1: "Ооба, негизги функциялары толугу менен акысыз.",
+                faq_title: "Суроо-жооптор", q1: "Тиркеме акысызбы?", a1: "Ооба, информердин негизги функциялары толугу менен акысыз.",
                 q2: "Бул мыйзамдуубу?", a2: "Ооба, биз ачык маалыматтарды гана колдонобуз.",
-                q3: "Нейротүйүн кандай иштейт?", a3: "КИ шаардык камераларды талдап, полиция унааларын картага автоматтык түрдө киргизет.",
+                q3: "Система кандай иштейт?", a3: "КИ жол абалы боюнча ачык маалыматтарды талдап, аларды картага автоматтык түрдө киргизет.",
                 footer_text: "&copy; 2026 ДПС Контроль. Ак жол!"
             },
             uz: {
-                title: "DPS <span>Nazorat</span>", hero_desc: "Uzoqni ko'radigan texnologiya. Haydovchilar tomonidan yaratilgan aqlli antiradar va navigator.", btn_download: "Ilovani yuklab olish",
-                card6_title: "Kameralarni neyro-kuzatish", card6_desc: "Bizning SI real vaqtda ochiq shahar kameralarini skanerlaydi. Neyrotarmoq patrul mashinalarini rangi va chiroqlaridan tanib, hammadan oldin pistirma haqida ogohlantiradi.",
-                card1_title: "Yangi avlod radari", card1_desc: "Bizning algoritmlarimiz marshrutni tahlil qiladi va kameralar hamda radarlar haqida ogohlantiradi.",
-                card2_title: "Hamjamiyat kuchi", card2_desc: "Politsiya pistirmasini ko'rdingizmi? Bitta tugmani bosing va barcha haydovchilar bu haqda bilib olishadi.",
-                card3_title: "Patrul belgilari", card3_desc: "Foydalanuvchilar real vaqt rejimida mobil postlarning joylashuvini belgilaydilar.",
+                title: "DPS <span>Nazorat</span>", hero_desc: "Uzoqni ko'radigan texnologiya. Haydovchilar tomonidan yaratilgan aqlli GPS-informer va navigator.", btn_download: "Ilovani yuklab olish",
+                card6_title: "Intellektual monitoring", card6_desc: "Bizning SI real vaqtda yo'l holatini tahlil qiladi. Neyrotarmoq nazorat hududlarini tanib, hammadan oldin tekshiruvlar haqida ogohlantiradi.",
+                card1_title: "Yangi avlod informeri", card1_desc: "Bizning algoritmlarimiz marshrutni tahlil qiladi va kameralar hamda qayd etish tizimlari haqida ogohlantiradi.",
+                card2_title: "Hamjamiyat kuchi", card2_desc: "Yo'l nazoratini ko'rdingizmi? Bitta tugmani bosing va barcha haydovchilar bu haqda bilib olishadi.",
+                card3_title: "Yo'l hodisalari", card3_desc: "Foydalanuvchilar real vaqt rejimida nazorat postlarining joylashuvini belgilaydilar.",
                 card4_title: "Internetsiz ishlash", card4_desc: "Xavf-xatarlar bazasini oldindan yuklab oling. Ilova faqat GPS orqali ishlaydi.",
-                card5_title: "Ko'rinmas rejim", card5_desc: "Ilova fonda ishlashi mumkin. Ovozli ko'rsatmalar xavf haqida o'z vaqtida ogohlantiradi.",
+                card5_title: "Fon rejimi", card5_desc: "Ilova fonda ishlashi mumkin. Ovozli ko'rsatmalar xavf haqida o'z vaqtida ogohlantiradi.",
                 rev1_name: "Farrux", rev1_text: "Yo'llar uchun eng yaxshi ilova. O'zbekistonda ajoyib ishlaydi.",
-                rev2_name: "Dilshod", rev2_text: "Toshkentda juda ko'p yordam beradi. Patrullar qayerda turganini doim bilaman.",
+                rev2_name: "Dilshod", rev2_text: "Toshkentda juda ko'p yordam beradi. Nazorat postlari qayerda turganini doim bilaman.",
                 rev3_name: "Jasur", rev3_text: "Internetsiz ishlashi juda qulay. Baza yuklab olib, xotirjam yurasiz.",
-                faq_title: "Ko'p so'raladigan savollar", q1: "Ilova bepulmi?", a1: "Ha, antiradarning asosiy funksiyalari mutlaqo bepul.",
+                faq_title: "Ko'p so'raladigan savollar", q1: "Ilova bepulmi?", a1: "Ha, informerning asosiy funksiyalari mutlaqo bepul.",
                 q2: "Bu qonuniymi?", a2: "Ha, biz faqat ochiq ma'lumotlar va GPS koordinatalaridan foydalanamiz.",
-                q3: "Neyrotarmoq qanday ishlaydi?", a3: "SI shahar kameralarini tahlil qilib, politsiya mashinalarini avtomatik tarzda xaritaga kiritadi.",
+                q3: "Tizim qanday ishlaydi?", a3: "SI yo'l holati haqidagi ochiq ma'lumotlarni tahlil qilib, ularni avtomatik tarzda xaritaga kiritadi.",
                 footer_text: "&copy; 2026 ДПС Контроль. Oq yo'l!"
             }
         };
